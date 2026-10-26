@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Imię Nazwisko klasa" />
+    <title>Nauka 8 – magazyn</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Magazyn</h1>
+    <form id="formularz">
+      <label for="nazwa">Nazwa</label>
+      <input id="nazwa" name="nazwa" type="text" />
+      <label for="cena">Cena</label>
+      <input id="cena" name="cena" type="number" step="0.01" />
+      <label for="ilosc">Ilość</label>
+      <input id="ilosc" name="ilosc" type="number" />
+      <button type="submit">Dodaj</button>
+    </form>
+    <button type="button" id="sortCena">Sortuj (Cena ↓)</button>
+    <p id="wynik"></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Cena</th>
+          <th>Ilość</th>
+          <th>Akcja</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <p>Suma: <span id="suma">0</span></p>
+    <footer><p>Imię Nazwisko klasa</p></footer>
+  </body>
+</html>
